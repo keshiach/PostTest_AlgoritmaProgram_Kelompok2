@@ -32,37 +32,3 @@ Untuk memastikan kelancaran proyek, pembagian beban kerja telah didistribusikan 
 * **Pengolahan Data (Grafik 3 - Korelasi):** Menganalisis hubungan antara `avg_income` vs `median_income` menggunakan **Scatter Plot**.
 * **Standar Kode:** Menggunakan pendekatan berbasis objek (`ax = axes[x, y]`).
 * **Review & Quality Control:** Memeriksa dan merapikan seluruh sintaks kode anggota kelompok sebelum digabungkan ke berkas `.ipynb` final. Memastikan parameter pemisah data (`sep=';'` dan `decimal=','`) serta konsistensi elemen visual (judul, label sumbu, legenda) terpenuhi.
-
----
-
-## ⚖️ Matriks Keseimbangan Beban Kerja
-
-| Anggota Kelompok | Fokus Utama Tugas | Estimasi Beban Kerja |
-| :--- | :--- | :---: |
-| 🔵 **Keshia** | Grafik 1 (Agregasi) + GitHub Setup | 🟡 Sedang |
-| 🟣 **Tiana** | Grafik 2 (Filter) + Layout Infografis | 🟡 Sedang |
-| 🟤 **Ludi** | Grafik 5 (Grid 2x2) + Finalisasi Desain | 🟡 Sedang |
-| 🟡 **Najwa** | Grafik 4 (Distribusi) + Penulisan Insight | 🟡 Sedang |
-| 🟢 **Rayna** | Grafik 3 (Korelasi) + Code Review & Integrasi | 🟡 Sedang |
-
----
-
-## 📦 Komitmen Bersama & Standar Kerja
-
-1.  **Versi Kode Tunggal:** Seluruh proses analisis dan visualisasi disatukan ke dalam satu file utama: `main.ipynb` (atau sesuai nama berkas kelompok).
-2.  **Manajemen Git:** Setiap anggota kelompok wajib melakukan *clone*, membuat *branch* (opsional), dan melakukan *commit/push* hasil kerjanya masing-masing ke repositori ini.
-3.  **Struktur Berkas Repositori:**
-    * 📁 `data/` : Berisi berkas data mentah (`.csv`).
-    * 📁 `output/` : Berisi hasil ekspor infografis (`.png`, `.jpg`, `.pdf`).
-    * 📄 `notebook.ipynb` : Berkas Jupyter Notebook utama yang berisi seluruh kode visualisasi.
-    * 📄 `README.md` : Dokumentasi pembagian tugas proyek.
-
----
-
-## 📢 Rencana Publikasi & Dokumentasi
-
-Setelah proyek selesai, setiap anggota kelompok akan melakukan publikasi mandiri secara serentak paling lambat **Sabtu, 6 Juni 2026 pukul 23:59 WIB** pada platform berikut:
-
-* **LinkedIn:** Mengunggah infografis final, menyertakan tautan menuju repositori GitHub ini pada *caption*, serta menandai (tag) akun **BKTI** dan seluruh **Asisten Praktikum (Asprak)** yang bertugas.
-* **Instagram Story:** Mengunggah infografis dengan format 9:16 serta menandai akun Instagram resmi **BKTI** dan akun Asprak kelas.
-* 
