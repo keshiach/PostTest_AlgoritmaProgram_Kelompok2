@@ -1,34 +1,239 @@
-# PostTest_AlgoritmaProgram_Kelompok2
-# 📊 Proyek Analisis Data Kebahagiaan Global (Global Happiness Analysis)
+# 📊 Happiness and Satisfaction Data Analysis Project
 
-Repositori ini berisi proyek kolaborasi kelompok untuk menganalisis, memvisualisasikan, dan menyusun infografis mengenai faktor-faktor yang memengaruhi skor kebahagiaan (*Happy Score*) di berbagai wilayah dunia. 
+## 👥 Anggota Kelompok
+
+| Nama      | Tanggung Jawab                                    |
+| --------- | ------------------------------------------------- |
+| 🔵 Keshia | Grafik 1 (Agregasi) + Setup GitHub                |
+| 🟣 Tiana  | Grafik 2 (Tren/Filter) + Desain Layout Infografis |
+| 🟤 Ludi   | Grafik 5 (Gabungan) + Finalisasi Infografis       |
+| 🟡 Najwa  | Grafik 4 (Distribusi) + Penulisan Insight         |
+| 🟢 Rayna  | Grafik 3 (Korelasi) + Review & Perapian Kode      |
 
 ---
 
-## 👥 Anggota Kelompok & Rincian Tugas (Job Description)
+# 🎯 Deskripsi Proyek
 
-Untuk memastikan kelancaran proyek, pembagian beban kerja telah didistribusikan secara merata kepada seluruh anggota kelompok dengan rincian sebagai berikut:
+Proyek ini bertujuan melakukan analisis data **Happiness and Satisfaction** menggunakan Python dan visualisasi data untuk menemukan pola, tren, hubungan antar variabel, serta menyajikan hasil analisis dalam bentuk infografis yang informatif dan mudah dipahami.
 
-### 🔵 Keshia
-* **Pengolahan Data (Grafik 1 - Agregasi):** Mencari nilai maksimum *Happy Score* per wilayah (*Region*) dan menyajikannya dalam bentuk **Horizontal Bar Chart**.
-* **Standar Kode:** Menggunakan pendekatan berbasis objek (`ax = axes[x, y]`).
-* **Manajemen Repositori:** Membuat dan melakukan *setup* awal repositori GitHub kelompok (Public), serta bertanggung jawab menyusun berkas `README.md` ini.
+Dataset diolah menggunakan **Pandas**, sedangkan visualisasi dibuat menggunakan **Matplotlib** dengan pendekatan **Object-Oriented Programming (OOP)** (`ax = axes[x, y]`).
 
-### 🟣 Tiana
-* **Pengolahan Data (Grafik 2 - Tren/Filter):** Menyaring data negara dengan kriteria `avg_income > 15.000` namun memiliki *Happy Score* di bawah rata-rata global, lalu menyajikannya dalam bentuk **Bar Chart**.
-* **Standar Kode:** Menggunakan pendekatan berbasis objek (`ax = axes[x, y]`).
-* **Desain Infografis:** Membuat template dan *layout* awal desain infografis dengan format Instagram Story (9:16) dan LinkedIn (1:1 / 4:5 / PDF Slider), serta memastikan keterbacaan teks grafik.
+---
 
-### 🟤 Ludi
-* **Pengolahan Data (Grafik 5 - Gabungan):** Menggabungkan Grafik 1 hingga Grafik 4 ke dalam satu *grid* layout 2×2 menggunakan fungsi `plt.subplots(2, 2, figsize=(...))`.
-* **Finalisasi Infografis:** Menggabungkan seluruh komponen grafik individual dan teks analisis/insight ke dalam template desain, lalu mengekspornya menjadi berkas resolusi tinggi (`.png`/`.jpg`/`.pdf`).
+# 📈 Pembagian Tugas Detail
 
-### 🟡 Najwa
-* **Pengolahan Data (Grafik 4 - Distribusi):** Menganalisis variabilitas `std_satisfaction` dari 10 negara teratas dan menyajikannya dalam bentuk **Bar Chart**.
-* **Standar Kode:** Menggunakan pendekatan berbasis objek (`ax = axes[x, y]`).
-* **Penulisan Konten:** Menyusun narasi *insight* atau kesimpulan singkat yang edukatif dan mudah dipahami oleh audiens awam untuk kelima grafik yang tersedia.
+## 🔵 KESHIA
 
-### 🟢 Rayna
-* **Pengolahan Data (Grafik 3 - Korelasi):** Menganalisis hubungan antara `avg_income` vs `median_income` menggunakan **Scatter Plot**.
-* **Standar Kode:** Menggunakan pendekatan berbasis objek (`ax = axes[x, y]`).
-* **Review & Quality Control:** Memeriksa dan merapikan seluruh sintaks kode anggota kelompok sebelum digabungkan ke berkas `.ipynb` final. Memastikan parameter pemisah data (`sep=';'` dan `decimal=','`) serta konsistensi elemen visual (judul, label sumbu, legenda) terpenuhi.
+### Grafik 1 — Analisis Agregasi Regional
+
+**Tugas Pengolahan Data**
+
+* Membersihkan data awal jika diperlukan.
+* Mengelompokkan data berdasarkan `Region`.
+* Menghitung nilai maksimum `Happy Score` pada setiap region.
+* Membuat **Horizontal Bar Chart** menggunakan pendekatan objek:
+
+```python
+ax = axes[x, y]
+```
+
+* Menambahkan:
+
+  * Judul grafik
+  * Label sumbu
+  * Nilai pada bar (jika memungkinkan)
+
+### Tugas GitHub
+
+* Membuat repository GitHub kelompok (Public).
+* Mengatur struktur folder proyek.
+* Mengunggah:
+
+  * Dataset (.csv)
+  * Notebook (.ipynb)
+  * Infografis (.png/.jpg/.pdf)
+* Membuat dan memperbarui README.md.
+* Memastikan seluruh anggota dapat melakukan commit dan push.
+
+---
+
+## 🟣 TIANA
+
+### Grafik 2 — Analisis Tren/Filter
+
+**Tugas Pengolahan Data**
+
+* Menentukan rata-rata global `Happy Score`.
+* Menyaring negara dengan:
+
+  * `avg_income > 15000`
+  * `Happy Score < rata-rata global`
+* Membuat visualisasi **Bar Chart** menggunakan pendekatan objek.
+* Menambahkan label dan anotasi yang informatif.
+
+### Tugas Desain Infografis
+
+* Mendesain template utama infografis.
+* Menentukan:
+
+  * Warna
+  * Tipografi
+  * Layout visual
+* Menyiapkan format:
+
+  * Instagram Story (9:16)
+  * LinkedIn Post (1:1)
+  * LinkedIn Portrait (4:5)
+  * PDF Slide
+
+---
+
+## 🟤 LUDI
+
+### Grafik 5 — Visualisasi Gabungan
+
+**Tugas Pengolahan Data**
+
+* Menggabungkan Grafik 1–4 dalam satu tampilan menggunakan:
+
+```python
+plt.subplots(2,2, figsize=(...))
+```
+
+* Menyesuaikan ukuran dan tata letak grafik.
+* Memastikan seluruh grafik tampil proporsional dan mudah dibaca.
+
+### Tugas Finalisasi Infografis
+
+* Mengintegrasikan:
+
+  * Grafik dari seluruh anggota
+  * Insight dari Najwa
+  * Template desain dari Tiana
+* Mengekspor hasil akhir menjadi:
+
+  * PNG
+  * JPG
+  * PDF resolusi tinggi
+
+---
+
+## 🟡 NAJWA
+
+### Grafik 4 — Analisis Distribusi
+
+**Tugas Pengolahan Data**
+
+* Menentukan 10 negara dengan skor kebahagiaan tertinggi.
+* Mengambil nilai `std_satisfaction`.
+* Membuat **Bar Chart** distribusi menggunakan pendekatan objek.
+* Menambahkan label dan keterangan yang relevan.
+
+### Tugas Penulisan Insight
+
+* Menulis interpretasi untuk seluruh grafik.
+* Menyusun kesimpulan yang:
+
+  * Ringkas
+  * Informatif
+  * Mudah dipahami masyarakat umum
+* Menjelaskan makna data tanpa istilah teknis yang berlebihan.
+
+---
+
+## 🟢 RAYNA
+
+### Grafik 3 — Analisis Korelasi
+
+**Tugas Pengolahan Data**
+
+* Menganalisis hubungan:
+
+  * `avg_income`
+  * `median_income`
+* Membuat **Scatter Plot** menggunakan pendekatan objek.
+* Menambahkan:
+
+  * Judul
+  * Label sumbu
+  * Garis tren (jika diperlukan)
+
+### Review & Quality Assurance
+
+* Memeriksa konsistensi kode seluruh anggota.
+* Memastikan penggunaan:
+
+```python
+sep=';'
+decimal=','
+```
+
+* Menyeragamkan:
+
+  * Judul grafik
+  * Label sumbu
+  * Ukuran font
+  * Warna dan gaya visualisasi
+* Menghapus kode yang redundan sebelum notebook final digabungkan.
+
+---
+
+# 📂 Struktur Repository
+
+```text
+📦 Happiness-and-Satisfaction-Analysis
+│
+├── data/
+│   └── Kelas_D_Happiness_and_Satisfaction.csv
+│
+├── notebooks/
+│   └── Analisis_Happiness.ipynb
+│
+├── infographic/
+│   ├── infographic_final.png
+│   ├── infographic_final.jpg
+│   └── infographic_final.pdf
+│
+├── images/
+│   └── seluruh grafik hasil analisis
+│
+└── README.md
+```
+
+---
+
+# 🤝 Tanggung Jawab Bersama
+
+Seluruh anggota wajib:
+
+✅ Menyelesaikan tugas sesuai pembagian
+
+✅ Melakukan commit hasil pekerjaan masing-masing ke GitHub
+
+✅ Memberikan dokumentasi kode yang jelas
+
+✅ Membantu proses integrasi notebook final
+
+✅ Melakukan pengecekan akhir sebelum pengumpulan
+
+---
+
+# 🛠 Tools yang Digunakan
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Google Colab
+* GitHub
+* Canva/Figma (Infografis)
+
+---
+
+# 📌 Output Proyek
+
+1. Dataset yang telah dianalisis
+2. Lima grafik visualisasi data
+3. Notebook Python (.ipynb)
+4. Infografis final
+5. Repository GitHub lengkap dengan dokumentasi proyek
