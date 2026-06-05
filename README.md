@@ -189,9 +189,6 @@ decimal=','
 │   └── Analisis_Happiness.ipynb
 │
 ├── infographic/
-│   ├── infographic_final.png
-│   ├── infographic_final.jpg
-│   └── infographic_final.pdf
 │
 ├── images/
 │   └── seluruh grafik hasil analisis
