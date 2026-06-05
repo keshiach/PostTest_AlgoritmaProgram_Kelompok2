@@ -16,7 +16,6 @@
 
 Proyek ini bertujuan melakukan analisis data **Happiness and Satisfaction** menggunakan Python dan visualisasi data untuk menemukan pola, tren, hubungan antar variabel, serta menyajikan hasil analisis dalam bentuk infografis yang informatif dan mudah dipahami.
 
-Dataset diolah menggunakan **Pandas**, sedangkan visualisasi dibuat menggunakan **Matplotlib** dengan pendekatan **Object-Oriented Programming (OOP)** (`ax = axes[x, y]`).
 
 ---
 
